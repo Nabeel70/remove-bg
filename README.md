@@ -1,6 +1,4 @@
 
-![Logo](https://i1.wp.com/fcdn.serdarbudak.com.tr/wp-content/uploads/2021/09/bgremove-min.png)
-
 
 # Image Background Removal Tool with React
 
