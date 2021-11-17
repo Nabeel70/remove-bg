@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from "react";
+import React, {Component } from "react";
+import {BrowserRouter,Link} from 'react-router-dom';
+
 
 export default class Footer extends Component {
   render() {
@@ -10,38 +12,24 @@ export default class Footer extends Component {
           <br></br> 
   <ul class="footer__nav">
     <li class="nav__item">
-      <h2 class="nav__title">Media</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Online</a>
-        </li>
-
-        <li>
-          <a href="#">Print</a>
-        </li>
-            
-        <li>
-          <a href="#">Alternative Ads</a>
-        </li>
-      </ul>
+      <h2 class="nav__title">How to use removeai App?</h2>
+      <p>removeai is cloud-based tool and a one-click free solution to remove backgrounds 100% automatically. The quickest way for new users working on a PC and Mac is to navigate to removeai.com in your browser, then: Click on choose file and click on remove background.</p>
     </li>
-    
     <li class="nav__item">
       <h2 class="nav__title">Legal</h2>
       
       <ul class="nav__ul">
+        <BrowserRouter>
         <li>
-          <a href="/#">Privacy Policy</a>
+        <Link to="/">Privacy Policy</Link>
         </li>
-        
         <li>
-          <a href="#">Terms of Use</a>
+        <Link to="/">Terms of Use</Link>
         </li>
-        
         <li>
-          <a href="#">Sitemap</a>
+        <Link to="/">Sitemap</Link>
         </li>
+       </BrowserRouter>
       </ul>
     </li>
   </ul>
