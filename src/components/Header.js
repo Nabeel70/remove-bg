@@ -7,11 +7,10 @@ export default class Header extends Component {
         <header className="text-white text-center">
           <img
             alt="Muhammad Nabeel Amin"
-            src="https://www.serdarbudak.com.tr/_next/static/images/logoW-9420a2d091ff277f3f95224812d88adf.png"
-            width="80"
+            src="https://i.ibb.co/N9nkZRH/img.png"
+            width="120"
             className="mb-4"
           />
-
           <h1 className="display-4">Background Removal Web App</h1>
           <p className="lead mb-0">Fast, simple and great performance.</p>
         </header>
