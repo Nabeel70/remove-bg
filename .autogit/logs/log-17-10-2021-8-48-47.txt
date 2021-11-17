@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Nov 17 2021 08:48:47 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/App.css
+
+
+Created files:
+* .autogit/logs/log-17-10-2021-8-18-10.txt
+
+
+Deleted files:
+
+
+Renamed files:
