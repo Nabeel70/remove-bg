@@ -2,7 +2,6 @@
 import React, {Component } from "react";
 import {BrowserRouter,Link} from 'react-router-dom';
 
-
 export default class Footer extends Component {
   render() {
     return (
@@ -21,7 +20,7 @@ export default class Footer extends Component {
       <ul class="nav__ul">
         <BrowserRouter>
         <li>
-        <Link to="/">Privacy Policy</Link>
+        <Link to="/contact">Contact Us</Link>
         </li>
         <li>
         <Link to="/">Terms of Use</Link>
