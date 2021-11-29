@@ -4,9 +4,7 @@
     margin-right: -7.4rem;
     margin-left: -7.4rem;
     margin-top: -2.9rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    background:transparent !important;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
