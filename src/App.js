@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import RemoveBackground from "./components/RemoveBackground";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
