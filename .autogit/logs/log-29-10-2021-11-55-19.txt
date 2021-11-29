@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Mon Nov 29 2021 11:55:19 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/Header.js
+* src/components/extra.css
+
+
+Created files:
+* .autogit/logs/log-29-10-2021-11-24-25.txt
+
+
+Deleted files:
+* src/components/Navbar.js
+
+
+Renamed files:

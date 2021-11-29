@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Navbar,Nav, Container} from 'react-bootstrap';
+import { Navbar,Nav, Container } from 'react-bootstrap';
 import './extra.css';
+import './RemoveBackground.js';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
+  Link,
+  Routes
 } from "react-router-dom";
+import RemoveBackground from "./RemoveBackground.js";
 
 
 
@@ -39,9 +41,10 @@ export default class Header extends Component {
   </Container>
 </Navbar>
 <div>
-<Switch>
-          <Route path="/">
-            <home/>
+
+  <Routes>
+          <Route path="/home">
+            <RemoveBackground/>
           </Route>
           <Route path="/privacy-policy">
             <privacy-policy />
@@ -49,7 +52,8 @@ export default class Header extends Component {
           <Route path="/contact-us">
             <contact-us />
           </Route>
-        </Switch>
+          </Routes>
+        
 </div>
 </Router>
 
