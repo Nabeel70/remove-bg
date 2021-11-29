@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar,Nav, Container, NavDropdown, Form, FormControl, Button, } from 'react-bootstrap'
+import './extra.css'
 
 export default class Header extends Component {
   render() {
@@ -8,24 +9,7 @@ export default class Header extends Component {
 
                    {/* Navbar code */}
 
-        {/* <Navbar navbar navbar-expand-lg bg="dark" variant="dark">
-  <Container>
-  <Navbar.Brand href="#home">Background Removal</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-    </Nav>
-    <Nav >
-      <Nav.Link href="#deets">Privacy Policy</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Contact-us
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-  </Container>
-</Navbar> */}
-
-<Navbar bg="light" expand="lg">
+<Navbar className="navibar" bg="light" expand="lg">
   <Container fluid>
     <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
