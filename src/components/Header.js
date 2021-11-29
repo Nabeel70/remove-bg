@@ -8,8 +8,9 @@ import {
   Link,
   Routes
 } from "react-router-dom";
-import RemoveBackground from "./RemoveBackground.js";
-
+import Home from "./RemoveBackground.js";
+import Privacy from "./Privacy";
+import ContactUs from './contact'
 
 
 
@@ -20,10 +21,10 @@ export default class Header extends Component {
       <div>
 
                    {/* Navbar code */}
-<Router>
+
 <Navbar id="navibar" bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand className="nav__title" as={Link} to={"/home"}>Background Removal</Navbar.Brand>
+    <Navbar.Brand className="nav__title" href="/home">Background Removal</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -34,31 +35,23 @@ export default class Header extends Component {
     
       </Nav>
       <Nav className="nav__title">
-      <Nav.Link as={Link} to={"/privacy-policy"}>Privacy Policy</Nav.Link>
-        <Nav.Link as={Link} to={"/contact-us"}>Contact-us</Nav.Link>
+      <Nav.Link href="/Privacy">Privacy Policy</Nav.Link>
+        <Nav.Link href="/ContactUs">Contact-us</Nav.Link>
         </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
-<div>
 
-  <Routes>
-          <Route path="/home">
-            <RemoveBackground/>
-          </Route>
-          <Route path="/privacy-policy">
-            <privacy-policy />
-          </Route>
-          <Route path="/contact-us">
-            <contact-us />
-          </Route>
-          </Routes>
-        
+<Router>
+<div>
+<Routes>
+          <Route exact path="/home" element={<Home />} />
+          <Route path="/Privacy" element={<Privacy/>} />
+          <Route path="/ContactUs" element={<ContactUs/>} />
+         
+        </Routes>    
 </div>
 </Router>
-
-
-
 
         <header className="text-white text-center">
           <img
