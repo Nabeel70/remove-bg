@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Navbar,Nav, Container, NavDropdown, Form, FormControl, Button, } from 'react-bootstrap'
 import './extra.css'
-
 export default class Header extends Component {
   render() {
     return (
@@ -9,7 +8,7 @@ export default class Header extends Component {
 
                    {/* Navbar code */}
 
-<Navbar className="navibar" bg="light" expand="lg">
+<Navbar id="navibar" bg="light" expand="lg">
   <Container fluid>
     <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
