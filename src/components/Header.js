@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import './extra.css';
 import './RemoveBackground.js';
 
 
@@ -12,11 +11,11 @@ export default class Header extends Component {
         <header className="text-white text-center">
           <img
             alt="Logo pic"
-            src="https://i.ibb.co/N9nkZRH/img.png"
-            width="120"
+            src="https://i.ibb.co/mvJkJks/download-30-1-1-1024x1024-1.jpg"
+            width="50%"
             className="mb-4"
           />
-          <h1 className="display-4">Background Removal Web App</h1>
+          <h1>Background Removal Web App</h1>
           <p className="lead mb-0">Fast, simple and great performance.</p>
         </header>
       </div>
