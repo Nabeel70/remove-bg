@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Tue Nov 30 2021 10:26:12 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/components/Footer.js
+* src/components/Header.js
+* src/components/nav.js
+* yarn.lock
+
+
+Created files:
+* .autogit/logs/log-29-10-2021-14-8-0.txt
+
+
+Deleted files:
+* src/Footer.js
+* src/Header.js
+* src/Privacy.js
+* src/RemoveBackground.js
+* src/contact.js
+* src/extra.css
+* src/nav.js
+* src/remove.js
+
+
+Renamed files:
