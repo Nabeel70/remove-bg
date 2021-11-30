@@ -4,9 +4,9 @@ import './extra.css';
 import './RemoveBackground.js';
 import {
   BrowserRouter as Router,
+  Switch,
   Route,
-  Link,
-  Routes
+  Link
 } from "react-router-dom";
 import Home from "./RemoveBackground.js";
 import Privacy from "./Privacy";
@@ -21,6 +21,7 @@ export default class Header extends Component {
       <div>
 
                    {/* Navbar code */}
+
 <Router>
 <Navbar id="navibar" bg="light" expand="lg">
   <Container fluid>
@@ -42,14 +43,14 @@ export default class Header extends Component {
   </Container>
 </Navbar>
 
+<Switch>
 <div>
-<Routes>
-          <Route exact path="/home" element={<Home />} />
-          <Route path="/Privacy" element={<Privacy/>} />
-          <Route path="/contactUs" element={<ContactUs/>} />
-         
-        </Routes>    
+<Route path="/home"> <Home /> </Route>
+<Route path="/Privacy"> <Privacy/></Route>
+<Route path="/contactUs"> <ContactUs/></Route>
+  
 </div>
+</Switch>
 </Router>
 
         <header className="text-white text-center">
