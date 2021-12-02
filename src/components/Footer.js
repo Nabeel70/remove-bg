@@ -17,14 +17,14 @@ export default class Footer extends Component {
   </ul>
 <div class="container">
 <div class="row">
-<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="col-md-6 col-sm-6 col-md-3">
 <div class="widget subscribe no-box">
 <h5 class="widget-title">Remove-AI<span></span></h5>
 <p>Remove-ai is cloud-based tool and a one-click free solution to remove backgrounds 100% automatically.</p>
 </div>
 </div>
 
-<div class="col-xs-12 col-sm-6 col-md-3">
+{/* <div class="col-xs-12 col-sm-6 col-md-3">
 <div class="widget no-box">
 <h5 class="widget-title">Quick Links<span></span></h5>
 <ul class="thumbnail-widget">
@@ -43,9 +43,9 @@ export default class Footer extends Component {
 <h5 class="widget-title">Get Started<span></span></h5>
 <p>Get your full background removed image here.</p>
 </div>
-</div>
+</div> */}
 
-<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="col-md-6 col-sm-6 col-md-3">
 
 <div class="widget no-box">
 <h5 class="widget-title">Contact Us<span></span></h5>
