@@ -9,7 +9,7 @@ import ReactGa from "react-ga";
 function App() {
 
   useEffect(() => {
-    ReactGa.initialize('G-TBGX82SVFH')
+    ReactGa.initialize('G-7GVFDD509S')
 
     //to report page views
     ReactGa.pageview('window.location.pathname + window.location.search');
