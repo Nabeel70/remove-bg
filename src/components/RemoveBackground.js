@@ -57,7 +57,7 @@ export default function RemoveBackground() {
       const down = document.getElementById("down");
       image.src = blob;
       down.href = blob;
-      down.download = "img.jpeg";
+      down.download = "image.jpeg";
     });
   };
 
@@ -103,7 +103,7 @@ export default function RemoveBackground() {
               </p>
               <div className="image-area mt-4 justify-content-center">
                 {status === false ? (
-                  <div class="lds-roller mb-3">
+                  <div className="lds-roller mb-3">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -116,7 +116,7 @@ export default function RemoveBackground() {
                 ) : (
                   <img
                     id="imageResult"
-                    src="/#"
+                    src="#"
                     alt=""
                     className="img-fluid rounded shadow-sm mx-auto d-block"
                   />

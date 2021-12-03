@@ -7,19 +7,19 @@ export default class Footer extends Component {
     return (
       <div>
        
-<footer id="footer" class="footer-1">
-<div class="main-footer widgets-dark typo-light">
-<ul class="footer__nav">
+<footer id="footer" className="footer-1">
+<div className="main-footer widgets-dark typo-light">
+<ul className="footer__nav">
     <li className="nav__item">
       <h2 className="nav__title text-center">How to use removeai App?</h2>
       <p className="text-center"> Remove image backgrounds automatically in 5 seconds with just one click. The quickest way for new users working on a PC and Mac is to navigate to removeai.com in your browser, then: Click on choose file and click on remove background.</p>
     </li>
   </ul>
-<div class="container">
-<div class="row">
-<div class="col-md-6 col-sm-6 col-md-3">
-<div class="widget subscribe no-box">
-<h5 class="widget-title">Remove-AI<span></span></h5>
+<div className="container">
+<div className="row">
+<div className="col-md-6 col-sm-6 col-md-3">
+<div className="widget subscribe no-box">
+<h5 className="widget-title">Remove-AI<span></span></h5>
 <p>Remove-ai is cloud-based tool and a one-click free solution to remove backgrounds 100% automatically.</p>
 </div>
 </div>
@@ -45,10 +45,10 @@ export default class Footer extends Component {
 </div>
 </div> */}
 
-<div class="col-md-6 col-sm-6 col-md-3">
+<div className="col-md-6 col-sm-6 col-md-3">
 
-<div class="widget no-box">
-<h5 class="widget-title">Contact Us<span></span></h5>
+<div className="widget no-box">
+<h5 className="widget-title">Contact Us<span></span></h5>
 
 <p><a href="mailto:Zeezfit@gmail.com" title="glorythemes">Zeezfit@gmail.com</a></p>
 </div>
@@ -57,10 +57,10 @@ export default class Footer extends Component {
 </div>
 </div>
   
-<div class="footer-copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-12 text-center">
+<div className="footer-copyright">
+<div className="container">
+<div className="row">
+<div className="col-md-12 text-center">
 <p>Copyright Remove-AI © 2021. All rights reserved.</p>
 </div>
 </div>
