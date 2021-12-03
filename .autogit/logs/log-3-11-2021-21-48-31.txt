@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Dec 03 2021 21:48:31 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/RemoveBackground.js
+
+
+Created files:
+* .autogit/logs/log-3-11-2021-21-18-10.txt
+
+
+Deleted files:
+
+
+Renamed files:

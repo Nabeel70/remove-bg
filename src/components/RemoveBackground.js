@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setActionStatus } from "../features/removeBackground";
 import loadImage from "blueimp-load-image";
+import FormData from "form-data";
 
 export default function RemoveBackground() {
   const status = useSelector((state) => state.status.bgRemoved);
@@ -36,27 +37,67 @@ export default function RemoveBackground() {
       const formData = new FormData();
       formData.append("image_file", inputBlob);
 
-      const response = await fetch('https://api.remove.bg/v1.0/removebg', {
-        method: "POST",
-        headers: {
-          'X-Api-Key': 'TXfCibpm7zU4hea1yGDRzD5Q',
-        },
-        encoding: null,
-        body: formData,
-      });
 
-      if (response.status === 200) {
-        dispatch(setActionStatus(true));
-      } else {
-        dispatch(setActionStatus(false));
-      }
+      // Requires "axios" and "form-data" to be installed (see https://www.npmjs.com/package/axios and https://www.npmjs.com/package/form-data)
+const axios = require('axios');
+const FormData = require('form-data');
+const fs = require('fs');
+const path = require('path');
+
+const inputPath = '/path/to/file.jpg';
+const formData = new FormData();
+formData.append('size', 'auto');
+formData.append('image_file', fs.createReadStream(inputPath), path.basename(inputPath));
+
+axios({
+  method: 'post',
+  url: 'https://api.remove.bg/v1.0/removebg',
+  data: formData,
+  responseType: 'arraybuffer',
+  headers: {
+    ...formData.getHeaders(),
+    'X-Api-Key': 'azg5hfYYG3vhmQJs6wBjZfud',
+  },
+  encoding: null
+})
+.then((response) => {
+  if(response.status != 200) return console.error('Error:', response.status, response.statusText);
+  fs.writeFileSync("no-bg.png", response.data);
+})
+.catch((error) => {
+    return console.error('Request failed:', error);
+});
+
+      // const response = await fetch({
+      //   method: 'post',url: 'https://api.remove.bg/v1.0/removebg',
+      //   data: formData,
+      //   responseType: 'arraybuffer',
+      //   headers: {
+      //     'X-Api-Key': 'azg5hfYYG3vhmQJs6wBjZfud',
+      //   },
+      //   encoding: 'null'
+      // })
+      // .then((response) => {
+      //   // eslint-disable-next-line eqeqeq
+      //   if(response.status != 200) return console.error('Error:', response.status, response.statusText);
+      //   dispatch(setActionStatus(true));
+      // })
+      // .catch((error) => {
+      //     return console.error('Request failed:', error);
+      // });
+
+      // if (response.status === 200) {
+      //   dispatch(setActionStatus(true));
+      // } else {
+      //   dispatch(setActionStatus(false));
+      // }
 
       const outputBlob = await response.blob();
 
       blob = URL.createObjectURL(outputBlob);
       const image= document.getElementById('imageResult')
       const down = document.getElementById("down");
-      image.imageResult = blob;
+      image.src = blob;
       down.href = blob;
       down.download = "pic.png";
     });
@@ -117,15 +158,15 @@ export default function RemoveBackground() {
                 ) : (
                   <img
                     id="imageResult"
-                    src="/#"
+                    src=""
                     alt=""
                     className="img-fluid rounded shadow-sm mx-auto d-block"
                   />
                 )}{" "}
               </div>
               {status ? (
-                   // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                   <a id="down">
+
+                   <a href="/#" id="down">
                   <button className="btn btn-light down-button">
                     {" "}
                     <i className="fas fa-download" /> Download
