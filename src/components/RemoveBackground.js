@@ -36,11 +36,12 @@ export default function RemoveBackground() {
       const formData = new FormData();
       formData.append("image_file", inputBlob);
 
-      const response = await fetch("https://api.remove.bg/v1.0/removebg", {
+      const response = await fetch('https://api.remove.bg/v1.0/removebg', {
         method: "POST",
         headers: {
-          "X-Api-Key": "TXfCibpm7zU4hea1yGDRzD5Q",
+          'X-Api-Key': 'TXfCibpm7zU4hea1yGDRzD5Q',
         },
+        encoding: null,
         body: formData,
       });
 
@@ -53,11 +54,11 @@ export default function RemoveBackground() {
       const outputBlob = await response.blob();
 
       blob = URL.createObjectURL(outputBlob);
-      const image = document.getElementById("imageResult");
+      const image= document.getElementById('imageResult')
       const down = document.getElementById("down");
-      image.src = blob;
+      image.imageResult = blob;
       down.href = blob;
-      down.download = "image.jpeg";
+      down.download = "pic.png";
     });
   };
 
@@ -116,7 +117,7 @@ export default function RemoveBackground() {
                 ) : (
                   <img
                     id="imageResult"
-                    src="#"
+                    src="/#"
                     alt=""
                     className="img-fluid rounded shadow-sm mx-auto d-block"
                   />
