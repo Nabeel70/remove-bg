@@ -39,7 +39,7 @@ export default function RemoveBackground() {
       const response = await fetch("https://api.remove.bg/v1.0/removebg", {
         method: "POST",
         headers: {
-          "X-Api-Key": "kemn8b3JmE9qdUEjqCrYHqpY",
+          "X-Api-Key": "TXfCibpm7zU4hea1yGDRzD5Q",
         },
         body: formData,
       });
