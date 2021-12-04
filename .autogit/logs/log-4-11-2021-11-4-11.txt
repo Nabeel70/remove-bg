@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sat Dec 04 2021 11:04:11 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/index.html
+* src/components/Header.js
+
+
+Created files:
+* .autogit/logs/log-4-11-2021-7-37-35.txt
+* public/sitemap.xml
+
+
+Deleted files:
+
+
+Renamed files:

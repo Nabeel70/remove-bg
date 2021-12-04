@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './RemoveBackground.js';
-import {Helmet} from "react-helmet";
 
 
 
@@ -8,7 +7,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <Helmet>
+      
         <header className="text-white text-center">
           <img
             alt="Logo pic"
@@ -19,7 +18,7 @@ export default class Header extends Component {
           <h1>Background Removal Web App</h1>
           <p className="lead mb-0">Fast, simple and great performance.</p>
         </header>
-        </Helmet>
+        
       </div>
     );
   }
