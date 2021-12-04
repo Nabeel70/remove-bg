@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Fri Dec 03 2021 22:18:50 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/components/RemoveBackground.js
+* yarn.lock
+
+
+Created files:
+* .autogit/logs/log-3-11-2021-21-48-31.txt
+
+
+Deleted files:
+
+
+Renamed files:
