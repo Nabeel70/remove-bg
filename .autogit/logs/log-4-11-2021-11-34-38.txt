@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Sat Dec 04 2021 11:34:38 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* build.zip
+* package-lock.json
+* package.json
+* public/index.html
+* src/components/Header.js
+* yarn.lock
+
+
+Created files:
+* .autogit/logs/log-4-11-2021-11-4-11.txt
+
+
+Deleted files:
+* public/robots.txt
+* public/sitemap.xml
+
+
+Renamed files:
