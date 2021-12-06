@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setActionStatus } from "../features/removeBackground";
 import loadImage from "blueimp-load-image";
+import {Helmet} from 'react-helmet';
+
+<Helmet>
+
+<meta  name="description"
+content="Remove image backgrounds automatically in 5 seconds with just one click. Don't spend hours manually picking pixels. Upload your photo now & see the magic. Remove background from image automatically online free. Create transparent background, change to new bg, download high-resolution images."
+/>
+</Helmet>
 
 export default function RemoveBackground() {
   const status = useSelector((state) => state.status.bgRemoved);
@@ -40,7 +48,7 @@ export default function RemoveBackground() {
       const response = await fetch("https://api.remove.bg/v1.0/removebg", {
         method: "POST",
         headers: {
-          "X-Api-Key": "RHmqbCfa6ha8FJfVXds68idj",
+          "X-Api-Key": "8fxngDYwarkWGm5sao3hwKZj",
         },
         body: formData,
       });
