@@ -38,10 +38,10 @@ export default function RemoveBackground() {
       formData.append("image_file", inputBlob);
 
 
-      const response = await fetch("https://api.remove.bg/v1.0/removebg", {
+      const response = await fetch("https://sdk.photoroom.com/v1/segment", {
         method: "POST",
         headers: {
-          "X-Api-Key": "8fxngDYwarkWGm5sao3hwKZj",
+          "X-Api-Key": "91ff705b1fd14d075ee825587d34eb4bff947708",
         },
         body: formData,
       });
