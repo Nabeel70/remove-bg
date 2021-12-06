@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 06 2021 11:09:06 GMT+0500 (Pakistan Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/index.html
+* src/components/Header.js
+* src/components/RemoveBackground.js
+
+
+Created files:
+* .autogit/logs/log-5-11-2021-12-35-33.txt
+
+
+Deleted files:
+* generate-sitemap.js
+
+
+Renamed files:
