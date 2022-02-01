@@ -12,7 +12,7 @@ With the this Background Removal Tool you can simply remove the image background
 
 ## Demo
 
-Live [here](https://removebg.serdarbudak.com.tr/).
+Live [here](http://removeai.epizy.com/).
 
 
 ## License
@@ -45,6 +45,6 @@ In the project directory, you can run:
 
 ## FeedBack
 
-If you have any feedback, please contact us at mail@serdarbudak.com.tr
+If you have any feedback, please contact us at nabeelofficial70@gmail.com
 
   
